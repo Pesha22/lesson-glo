@@ -11,11 +11,11 @@ body {
   font-family: 'Yeseva One', cursive; }
   .section-title__image {
     display: flex;
+    justify-content: center;
     align-items: center; }
     .section-title__image::after, .section-title__image::before {
       content: '';
       width: 32px;
       height: 2px;
-      background-color: primary;
-      display: inline-block;
-      vertical-align: middle; }
+      background-color: #E3B873;
+      margin: 0 10px; }
