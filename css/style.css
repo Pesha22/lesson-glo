@@ -552,11 +552,11 @@ img {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 2.78rem;
+  margin-bottom: 3.39rem;
   font-family: FuturaBookC; }
 
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
 
 .types .row {
   display: flex;
@@ -698,3 +698,17 @@ img {
 @media screen and (max-width: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 0 18px; }
+  .hero__title {
+    font-size: 1.9rem; }
+  .hero__text {
+    font-size: 1.5rem; }
+  .hero__button {
+    min-width: 26rem;
+    font-size: 1.2rem;
+    border-radius: 0px; }
+  .hero__content {
+    top: 0; } }
