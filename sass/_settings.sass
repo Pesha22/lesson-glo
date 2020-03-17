@@ -9,10 +9,16 @@ img
     max-width: 100%
 .section
     padding: 60px 0
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One', cursive
+        &__heading
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            &--primary
+                color: $primary
         &__image
             display: flex
             justify-content: center
