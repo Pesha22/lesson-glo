@@ -773,6 +773,9 @@ img {
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 520px) {
+  .types__job {
+    background-color: #131313;
+    color: #fff; }
   .hero__scroll-down {
     display: none; } }
 
@@ -789,7 +792,7 @@ img {
     font-size: 1.5rem;
     line-height: 135.84%; }
   .hero__button {
-    min-width: 26rem;
+    max-width: 26rem;
     width: 100%;
     font-size: 1.2rem;
     border-radius: 0px; }
