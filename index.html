@@ -7,13 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
     <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
+        <div class="logo menu__logo wow flipInX" data-wow-delay="1s">Repair Design Project</div>
+        <nav class="nav menu__nav wow flipInX" data-wow-delay="1.5s">
             <a href="" class="nav__item">Главная</a>
             <a href="" class="nav__item">Проекты</a>
             <a href="" class="nav__item">Замер</a>
@@ -22,8 +23,8 @@
             <a href="" class="nav__item">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
-            <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-            <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+            <a href="tel:+79997683299" class="phone contacts__phone wow flipInX" data-wow-delay="2s">+7 (999) 768-32-99</a>
+            <button class="button contacts__button button--primary wow flipInX" data-wow-delay="2.5s" data-toggle="modal">Заказать звонок</button>
         </div>
         <!-- /.nav -->
     </div>
@@ -39,15 +40,15 @@
         
         <div class="container">
             <div class="hero__content">
-                <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-                <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-                <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
-                <button class="button hero__button button--outline">Оставить заявку</button>
+                <h1 class="title hero__title wow flipInX" data-wow-delay="3s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+                <p class="hero__text wow flipInX" data-wow-delay="3.5s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+                <button class="button hero__button button--primary wow zoomInUp" data-wow-delay="3.6s" data-toggle="modal">Рассчитать стоимость</button>
+                <button class="button hero__button button--outline wow zoomInUp" data-wow-delay="3.6s">Оставить заявку</button>
             </div>
             <!-- /.hero__content -->
         </div>
         <!-- /.container -->
-        <a href="#" class="hero__scroll-down">листайте вниз</a>
+        <a href="#" class="hero__scroll-down wow zoomInUp" data-wow-delay="6s">листайте вниз</a>
     </section>
     <!-- /.hero -->
     <section class="section section--dark projects">
@@ -467,6 +468,7 @@
 <!-- /.modal -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
