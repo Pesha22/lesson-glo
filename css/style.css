@@ -366,7 +366,8 @@ template {
   color: #fff;
   padding: 0.5rem; }
   .input--light {
-    color: #fff; }
+    color: #fff;
+    font-size: 18px; }
 
 .policy__checkbox {
   opacity: 0;
@@ -767,7 +768,7 @@ img {
     background-color: #fff; }
 
 .swiper-button-prev, .swiper-button-next {
-  buttom: 0;
+  bottom: 0;
   top: auto;
   background-size: 42px;
   width: 42px;
