@@ -32,4 +32,24 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    // валидация формы 
+    $('.modal__form').validate({
+      rules: {
+        // строчное правило
+        userName: "required",
+        //правило-объект (блок)
+        userEmail: {
+          required: true,
+          email: true
+        }
+      }, //сообщения
+      massages: {
+        userName: "Имя обязательно",
+        userEmail: {
+          required: "Обязательно укажите email",
+          email: "введите в формате: name@domain.ru"
+        }
+      }
+    });
+  
 });
