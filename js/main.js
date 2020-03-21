@@ -32,24 +32,36 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    // валидация формы 
-    $('.modal__form').validate({
-      rules: {
-        // строчное правило
-        userName: "required",
-        //правило-объект (блок)
-        userEmail: {
-          required: true,
-          email: true
-        }
-      }, //сообщения
-      massages: {
-        userName: "Имя обязательно",
-        userEmail: {
-          required: "Обязательно укажите email",
-          email: "введите в формате: name@domain.ru"
-        }
+  // валидация формы 
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        reguired: true,
+        minlength: 2
+      },
+      userPhone: "reguired",
+      //правило объеут (блок)
+      userEmail: {
+        reguired: true,
+        email: true
       }
-    });
+    }, // сообщения 
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        reguired:"Обязательно укажите email",
+        email:"Введите в формате: name@domain.com"
+      }
+    }
+  });
   
+  // маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___ __-__"});
+
 });
