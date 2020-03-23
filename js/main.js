@@ -59,23 +59,6 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          console.log('сработал Ajax' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса ' + response);
-          
-        }
-      });
     }
   });
 // маска для телефона
