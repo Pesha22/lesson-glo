@@ -1,5 +1,5 @@
-
 $(document).ready(function () {
+  var modalTh = document.querySelector('.modalTh');
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
@@ -67,7 +67,7 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('сработал Ajax' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         },
