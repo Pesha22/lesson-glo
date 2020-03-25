@@ -1,14 +1,19 @@
 $(document).ready(function () {
-  var modalTh = document.querySelector('.modalTh');
-  var modal = $('.modal'),
+  var Th = $('#modalTh'),
+      modalForm = $('.modal_form'),
+      modalThanks = $('.modal_thanks'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
+      closeBtnForm = $('.modal__close'),
+      closeBtnThanks = $('.modal__close');
   
   modalBtn.on('click', function () { 
-    modal.toggleClass('modal--visible');
+    modalForm.toggleClass('modal--visible');
   });
-  closeBtn.on('click', function () { 
-    modal.toggleClass('modal--visible');
+  closeBtnForm.on('click', function () { 
+    modalForm.toggleClass('modal--visible');
+  });
+  closeBtnThanks.on('click', function () { 
+    modalThanks.toggleClass('modal--visible');
   });
 
   var mySwiper = new Swiper ('.swiper-container', {
@@ -67,9 +72,10 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('сработал Ajax' + response);
-          
+          modalThanks.toggleClass('modal--visible');
+        
           $(form)[0].reset();
-          modal.removeClass('modal--visible');
+          modalForm.removeClass('modal--visible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
